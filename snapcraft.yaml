@@ -1,0 +1,17 @@
+name: tidal
+version: 2.2.10
+summary: Discover and Analyze Your Applications
+description: |
+  A set of CLI tools to aid in data center and cloud migration projects.
+  Integrates directly with the Tidal Migrations API. 
+
+confinement: devmode
+
+parts:
+  tidal:
+    plugin: dump
+    source: https://get.tidal.sh/packages/v2.2.10/tidal-linux-amd64-v2.2.10.tar.gz
+
+apps:
+  tidal:
+    command: tidal
