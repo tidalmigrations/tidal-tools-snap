@@ -10,7 +10,10 @@ confinement: devmode
 parts:
   tidal:
     plugin: dump
-    source: https://get.tidal.sh/packages/v2.2.10/tidal-linux-amd64-v2.2.10.tar.gz
+    source:
+    - on amd64: https://get.tidal.sh/packages/v$SNAPCRAFT_PROJECT_VERSION/tidal-linux-amd64-v$SNAPCRAFT_PROJECT_VERSION.tar.gz
+    - on i386: https://get.tidal.sh/packages/v$SNAPCRAFT_PROJECT_VERSION/tidal-linux-386-v$SNAPCRAFT_PROJECT_VERSION.tar.gz
+    - else fail
 
 apps:
   tidal:
