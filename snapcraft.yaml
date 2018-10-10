@@ -5,15 +5,14 @@ description: |
   A set of CLI tools to aid in data center and cloud migration projects.
   Integrates directly with the Tidal Migrations API. 
 
-confinement: devmode
+confinement: strict
 
 parts:
   tidal:
     plugin: dump
     source:
-    - on amd64: https://get.tidal.sh/packages/v$SNAPCRAFT_PROJECT_VERSION/tidal-linux-amd64-v$SNAPCRAFT_PROJECT_VERSION.tar.gz
-    - on i386: https://get.tidal.sh/packages/v$SNAPCRAFT_PROJECT_VERSION/tidal-linux-386-v$SNAPCRAFT_PROJECT_VERSION.tar.gz
-    - else fail
+      - on amd64: https://get.tidal.sh/packages/v$SNAPCRAFT_PROJECT_VERSION/tidal-linux-amd64-v$SNAPCRAFT_PROJECT_VERSION.tar.gz
+      - on i386: https://get.tidal.sh/packages/v$SNAPCRAFT_PROJECT_VERSION/tidal-linux-386-v$SNAPCRAFT_PROJECT_VERSION.tar.gz
 
 apps:
   tidal:
