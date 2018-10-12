@@ -1,4 +1,10 @@
 language: minimal
+sudo: true
+dist: trusty
+
+install:
+  - sudo apt-get --yes install snapd
+  - sudo snap install snapcraft --classic
 
 deploy:
   provider: snap
