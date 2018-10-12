@@ -1,0 +1,5 @@
+deploy:
+  provider: snap
+  snap: tidal
+  channel: stable
+  skip_cleanup: true
