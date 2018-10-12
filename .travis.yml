@@ -6,6 +6,9 @@ install:
   - sudo apt-get --yes install snapd
   - sudo snap install snapcraft --classic
 
+script:
+  - snapcraft
+
 deploy:
   provider: snap
   snap: tidal
