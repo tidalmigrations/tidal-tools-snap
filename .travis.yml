@@ -7,7 +7,7 @@ install:
   - sudo snap install snapcraft --classic
 
 script:
-  - snapcraft
+  - /snap/bin/snapcraft
 
 deploy:
   provider: snap
