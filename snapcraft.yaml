@@ -7,8 +7,6 @@ description: |
 
 confinement: strict
 
-architectures: [amd64, i386]
-
 parts:
   tidal:
     plugin: dump
