@@ -11,6 +11,6 @@ script:
 
 deploy:
   provider: snap
-  snap: tidal
+  snap: tidal*.snap
   channel: stable
   skip_cleanup: true
