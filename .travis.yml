@@ -1,16 +1,16 @@
 language: minimal
 sudo: true
 dist: trusty
-
 install:
-  - sudo apt-get --yes install snapd
-  - sudo snap install snapcraft --classic
-
+- sudo apt-get --yes install snapd
+- sudo snap install snapcraft --classic
 script:
-  - /snap/bin/snapcraft
-
+- "/snap/bin/snapcraft"
 deploy:
   provider: snap
   snap: tidal*.snap
   channel: stable
   skip_cleanup: true
+notifications:
+  slack:
+    secure: oKLq+QM41E9Hb2AKevlu6CuBzJhYJX2mQ4GHzdI03F4zVCRWf0LwCq5L/hl/lL9S11U8JefsYoesxTi/MNdGb8/g9Ol4icJGhmNP+91PA+R+QlrX3livEQqiUKVXAoAV1O3SRzolQaWgwTusMMUrnIaS2BmN74r6VzAOVf8kbNNnEeMhZnG9lYNugSh3wFY4DcSo1KAPgS55Jq52Q7LTW3KAufdLhidQnPUtKksshQHhelmdvo7VbdNWyJg/Tv2N7d0YYzcDx0tRHR2gkfQdWhZAonkRl+YI/nN01QClVfhcMyW7gAE0+QAqObkK+Ma2HtnHn/t9qv/Gy35L78/xrcuBxxwODVEciI3BUJlkYKeNS0/EjcvLHSNt/uKisgXBBKL6YwLJ9tk5QixGsHPANIBOVphxnWV9dWjdIYR11NVbZx3aEbsVecVy/AIuIYR4tfRrTKUvmoF+6cMjD9gyH/fDVe+6tN3AZEZ/kG9ztkGde5XoyAuCb7bEyIC6tqtnQ8jmqVY2dxT5bw2GUnQxRvUILSajcvK5of6cqRiPlm5NU6ds3ErBsdsgVZZ1bQoVnmJwNPMEP6amW+pE0WTQRD/1uWqCH6L4Er75oxg52BEyF9prHqBrE3cxVDCUppUmIQi7R6wH794AoecjKWuXYj6ot4YYJS4KofS77M1ErRE=
