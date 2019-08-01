@@ -8,7 +8,7 @@ description: |
   Integrates directly with the Tidal Migrations API. 
 grade: stable
 confinement: strict
-license: proprietary
+license: Proprietary
 
 parts:
   tidal:
