@@ -4,7 +4,7 @@ dist: bionic
 addons:
   snaps:
     - name: snapcraft
-      classic: true
+      confinement: classic
 env:
   - SNAPCRAFT_BUILD_ENVIRONMENT=host
 script:
