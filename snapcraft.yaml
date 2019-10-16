@@ -1,14 +1,14 @@
 name: tidal
 title: Tidal Tools
 base: core18
-version: 2.5.14
+version: 2.5.15
 summary: Discover and Analyze Your Applications
 description: |
   A set of CLI tools to aid in data center and cloud migration projects.
   Integrates directly with the Tidal Migrations API. 
 grade: stable
 confinement: strict
-license: proprietary
+license: Proprietary
 
 parts:
   tidal:
