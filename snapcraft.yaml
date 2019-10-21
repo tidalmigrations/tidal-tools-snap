@@ -20,5 +20,3 @@ parts:
 apps:
   tidal:
     command: tidal
-    plugs:
-      - docker
