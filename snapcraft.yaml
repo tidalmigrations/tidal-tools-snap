@@ -22,3 +22,4 @@ apps:
     command: tidal
     plugs:
       - network
+      - docker
